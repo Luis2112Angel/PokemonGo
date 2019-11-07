@@ -4,21 +4,21 @@ package com.legion2112.pokemonandroid
 import android.location.Location
 
 class  Pokemon{
-    var name: String? = null
-    var description: String? = null
-    var power: Double? = null
-    var location: Location? = null
-    var isCatch: Boolean? = false
-    var image: Int? = null
-
-    constructor(name: String, description: String, power: Double, latitude: Double, longitude: Double, image: Int){
-        this.name = name
-        this.description = description
-        this.power = power
-        this.location = Location(name)
-        this.location!!.latitude = latitude
-        this.location!!.longitude = longitude
-        this.isCatch = false
-        this.image = image
+    var name:String?=null
+    var des:String?=null
+    var image:Int?=null
+    var power:Double?=null
+    var location:Location?=null
+    var IsCatch:Boolean?=false
+    constructor(image:Int,name:String,des:String,power:Double,lat:Double,log:Double){
+        this.name=name
+        this.des=des
+        this.image=image
+        this.power=power
+        this.location= Location(name)
+        this.location!!.latitude=lat
+        this.location!!.longitude=log
+        this.IsCatch=false
     }
+
 }
